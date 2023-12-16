@@ -67,11 +67,6 @@ function AddEditTaskModal({
     return true;
   };
 
-  /**
-   * Submits the form based on the given type.
-   *
-   * @param {string} type - The type of form submission.
-   */
   const onSubmit = (type) => {
     if (type === 'add') {
       const isValid = validate();

@@ -67,11 +67,6 @@ function AddEditTaskModal({
     return true;
   };
 
-  /**
-   * Submits the form based on the given type.
-   *
-   * @param {string} type - The type of form submission.
-   */
   const onSubmit = (type) => {
     if (type === 'add') {
       const isValid = validate();
@@ -112,12 +107,14 @@ function AddEditTaskModal({
     setIsFirstLoad(false);
   }
 
-  /**
-   * Deletes a subtask from the subtasks array based on the given id.
-   *
-   * @param {number} id - The id of the subtask to be deleted.
-   * @return {void} 
-   */
+<<<<<<<<<<<<<  ✨ Codeium AI Suggestion  >>>>>>>>>>>>>>
++  /**
++   * Deletes a subtask from the subtasks array based on the given id.
++   *
++   * @param {number} id - The id of the subtask to be deleted.
++   * @return {void} 
++   */
+<<<<<  bot-3d78dc3a-ca7a-4def-8b54-e59e9f7341e1  >>>>>
   const onDelete = (id) => {
     setSubtasks((prevState) => prevState.filter((el) => el.id !== id));
   };

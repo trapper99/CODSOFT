@@ -6,7 +6,7 @@ const boardsSlice = createSlice({
     initialState: data.boards,
     reducers: {
         addBoard: (state, action) => {
-            const isActive = state.length === 0;
+            const isActive = state;
             const payload = action.payload;
             const board = {
                 name: payload.name,

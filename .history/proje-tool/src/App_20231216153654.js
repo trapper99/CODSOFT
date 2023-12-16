@@ -16,18 +16,7 @@ function App() {
     dispatch(boardsSlice.actions.setBoardActive({ index: 0}));
   return (
     <MediaQuery minWidth={768} minResolution={1920}>
-    <div className='overflow-hidden overflow-x-scroll'>
-      <Routes>
-        <Route
-          exact path="/proje-tool/src/components/Home.js"
-          element={
-            <Home
-              setIsBoardModalOpen={setIsBoardModalOpen}
-              isBoardModalOpen={isBoardModalOpen}
-            />
-          }
-        />
-      </Routes>
+    <div className='overflow-hidden overflow-x-scroll'>\
 
       {/* Header Section*/}
 

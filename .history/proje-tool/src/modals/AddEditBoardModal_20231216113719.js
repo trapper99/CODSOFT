@@ -166,12 +166,11 @@ function AddEditBoardModal({setIsBoardModalOpen, type, boardId}) {
                     <button
                       onClick={() => {
                         isValid();
-                        validate();
                         
                         if (isValid === true) {
                             onSubmit(type);
-                            setIsBoardModalOpen(false);
-                      }}}
+                            
+                      }}
                       className='w-full items-center hover:opacity-70 dark:text-white dark:bg-[#635fc7] mt-8 relative text-white bg-[#635fc7] py-2 bottom-4 rounded-full'>
                         {type === "add" ? "Add New Board" : "Save Changes"}
                       </button>

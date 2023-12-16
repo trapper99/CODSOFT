@@ -67,11 +67,13 @@ function AddEditTaskModal({
     return true;
   };
 
-  /**
-   * Submits the form based on the given type.
-   *
-   * @param {string} type - The type of form submission.
-   */
+<<<<<<<<<<<<<  ✨ Codeium AI Suggestion  >>>>>>>>>>>>>>
++  /**
++   * Submits the form based on the given type.
++   *
++   * @param {string} type - The type of form submission.
++   */
+<<<<<  bot-29853d6d-af82-48f0-a610-90278866747b  >>>>>
   const onSubmit = (type) => {
     if (type === 'add') {
       const isValid = validate();

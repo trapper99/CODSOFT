@@ -4,7 +4,7 @@ import boardsSlice from '../redux/boardsSlice'
 import { v4 as uuidv4 } from 'uuid'
 import { useDispatch, useSelector } from 'react-redux'
 
-function AddEditBoardModal({setIsBoardModalOpen, type, boardId}) {
+function AddEditBoardModal({setIsBoardModalOpen, type, b}) {
     const dispatch = useDispatch();
     const [isFirstLoad, setIsFirstLoad] = useState(true);
     const [name, setName] = useState('');
@@ -166,12 +166,12 @@ function AddEditBoardModal({setIsBoardModalOpen, type, boardId}) {
                     <button
                       onClick={() => {
                         isValid();
-                        validate();
                         
                         if (isValid === true) {
                             onSubmit(type);
-                            setIsBoardModalOpen(false);
-                      }}}
+                            validate();
+                        }
+                      }}
                       className='w-full items-center hover:opacity-70 dark:text-white dark:bg-[#635fc7] mt-8 relative text-white bg-[#635fc7] py-2 bottom-4 rounded-full'>
                         {type === "add" ? "Add New Board" : "Save Changes"}
                       </button>

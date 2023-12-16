@@ -19,7 +19,7 @@ function App() {
     <div className='overflow-hidden overflow-x-scroll'>
       <Routes>
         <Route
-          exact path="/proje-tool/src/components/Home.js"
+          exact path="/proje-tool/src"
           element={
             <Home
               setIsBoardModalOpen={setIsBoardModalOpen}

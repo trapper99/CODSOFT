@@ -166,7 +166,7 @@ function AddEditBoardModal({setIsBoardModalOpen, type, boardId}) {
                     <button
                       onClick={() => {
                         isValid();
-                        validate();
+                        v
                         
                         if (isValid === true) {
                             onSubmit(type);
