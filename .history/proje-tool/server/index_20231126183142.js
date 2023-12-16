@@ -1,0 +1,11 @@
+const express = require("express");
+ mongoose = require("mongoose");
+import cors = require("cors");
+
+const app = express();
+app.use(express.json());
+app.use(cors());
+
+app.listen(3001, () => {
+    console.log("Server started on port 3001");
+});

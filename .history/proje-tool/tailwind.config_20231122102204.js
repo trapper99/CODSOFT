@@ -1,0 +1,13 @@
+/** @type {import('tailwindcss').Config} */
+ {
+  content: ["./src/**/*.{html,js}"],
+  darkMode: 'class',
+  theme: {
+    extend: {},
+  },
+  plugins: [
+    require('tailwindcss'),
+    require('autoprefixer'),
+  ],
+}
+
